@@ -2,8 +2,10 @@
 // 2. Stampare in console i dati 
 // 3. Stampare le stesse informazioni su DOM sottoforma di stringhe
 
+// RECUPERO L'ELEMENTO DAL DOM
 const team = document.getElementById('team');
 
+// CREO L'ARRAY DI OGGETTI
 const teamMembers = [
     { name: 'Wayne Barnett', role: 'Founder & CEO', img: 'wayne-barnett-founder-ceo.jpg', },
     { name: 'Angela Caroll', role: 'Chief Editor', img: 'angela-caroll-chief-editor.jpg', },
@@ -13,8 +15,10 @@ const teamMembers = [
     { name: 'Barbara Ramos', role: 'Graphic Designer', img: 'barbara-ramos-graphic-designer.jpg', },
 ]
 
+// CREO UNA VARIABILE D'APPOGGIO
 let info = '';
 
+// CREO UNA STRINGA CON TUTTE LE INFORMAZIONI CON UN CICLO FOR
 for (let i = 0; i < teamMembers.length; i++){
     console.log(teamMembers[i].name);
     console.log(teamMembers[i].role);
@@ -22,4 +26,5 @@ for (let i = 0; i < teamMembers.length; i++){
     info += `<div><img src="img/${teamMembers[i].img}" alt=""><h4>${teamMembers[i].name}</h4><p>${teamMembers[i].role}</p></div>`
 }
 
+// STAMPO LE STRINGHE NEL DOM
 team.innerHTML = info;
