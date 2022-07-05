@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(225, 225, 225);
+}
+
+img{
+    max-width: 100%;
+}
+
+.title{
+    padding: 3rem 0;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title h3{
+    margin-bottom: 1rem;
+}
+
+#team{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#team div{
+    background-color: white;
+    width: calc(100% / 3 - 2rem);
+    margin: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#team img{
+    margin-bottom: 1rem;
+}
